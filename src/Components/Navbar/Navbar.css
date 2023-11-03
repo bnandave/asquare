@@ -1,0 +1,27 @@
+nav {
+  background-color: #bfe0ff;
+  padding: 4px 160px;
+  font-family: 'Poppins', sans-serif;
+}
+
+nav p {
+  font-size: 12px;
+  font-weight: 500;
+  margin: 0;
+  cursor: pointer;
+}
+
+nav p:hover {
+    text-decoration: underline 1.2px rgb(3, 0, 39);
+    color: rgb(3, 0, 39);
+}
+
+.social-media-icons {
+  display: flex;
+  gap: 10px;
+}
+
+.social-media-icons img {
+  height: 14px;
+  width: 14px;
+}

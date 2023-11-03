@@ -1,0 +1,68 @@
+.hero_container {
+  padding: 20px 160px 40px;
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  background-color: rgba(236, 246, 255, 1);
+}
+
+.hero_container_p1 {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.hero_container_p1 h1 {
+  font-size: 42px;
+  font-weight: 700;
+  letter-spacing: 4px;
+  width: 36vw;
+  margin: 0;
+}
+
+.hero_container_subtitle {
+  font-size: 16px;
+  font-weight: 300;
+  width: 38vw;
+  margin: 0;
+}
+
+.hero_counter {
+  width: 28vw;
+}
+
+.hero_counter div {
+  flex-direction: column;
+  gap: 6px;
+  padding: 0 20px;
+  font-size: 20px;
+}
+
+.hero_counter div:nth-child(1),
+.hero_counter div:nth-child(2) {
+  border-right: solid;
+  border-right-width: 1px;
+  border-right-color: rgba(102, 102, 102, 0.279);
+}
+
+.hero_counter div p {
+  margin: 0;
+}
+
+.hero_counter div p:first-child {
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+
+.hero_counter div p:last-child {
+  color: rgba(102, 102, 102, 1);
+  width: 140px;
+  text-align: center;
+}
+
+.hero_container_p2 img {
+  height: 482px;
+  width: 482px;
+}

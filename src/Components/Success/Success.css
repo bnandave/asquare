@@ -1,0 +1,55 @@
+.success {
+  background-color: white;
+  padding: 8px 80px;
+  height: 70px;
+  width: 860px;
+  border-radius: 100px;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25);
+}
+
+.success p {
+  margin: 0;
+}
+
+.success p:first-child {
+  color: #808080;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.success p:last-child {
+  color: #ff0505bf;
+  letter-spacing: 3px;
+  font-weight: 700;
+  font-size: 24px;
+  position: relative;
+  top: -24px;
+  animation: text_slide 3s ease-in infinite;
+  width: 160px;
+}
+
+@keyframes text_slide {
+  0% {
+    top: -24px;
+    opacity: 0;
+  }
+  30% {
+    top: 0px;
+    opacity: 1;
+  }
+  70% {
+    top: 0px;
+    opacity: 1;
+  }
+  100% {
+    top: 24px;
+    opacity: 0;
+  }
+}

@@ -1,0 +1,153 @@
+.courses {
+  padding: 60px 160px;
+  background-color: rgba(236, 246, 255, 1);
+  display: flex;
+  flex-direction: column;
+}
+
+.courses_upper {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  align-items: center;
+}
+
+.courses_upper p:nth-child(2) {
+  width: 620px;
+  text-align: center;
+}
+
+.courses_upper div {
+  list-style: none;
+  background-color: white;
+  height: 60px;
+  width: 650px;
+  border-radius: 116px;
+  padding: 0 60px;
+}
+
+.courses_upper div li {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+/* course card css code below */
+
+.card {
+  width: 300px;
+  height: 380px;
+  background: none;
+  border-radius: 16px;
+  border: none;
+  display: inline-block;
+  align-items: center;
+}
+
+.card_img {
+  width: 300px;
+  height: 380px;
+  border-radius: 16px;
+  object-fit: cover;
+}
+
+.card_content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 16px;
+  position: relative;
+  top: -380px;
+  height: 380px;
+  background-color: #3737375a;
+  padding: 24px 0;
+}
+
+.card_top {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.card_top_containers p {
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 400;
+  margin: 0;
+}
+
+.card_top_containers img {
+  position: relative;
+  top: -1.4px;
+  height: 20px;
+  width: fit-content;
+}
+
+.card_top p {
+  margin: 0;
+  width: 200px;
+  padding: 0px 10px;
+}
+
+.card_top div:nth-child(1) p {
+  background-color: #fffef1;
+  width: 130px;
+  height: 20px;
+}
+
+.card_top div:nth-child(2) p {
+  background-color: #fffcb2;
+  width: 150px;
+  height: 20px;
+}
+
+.card_top div:nth-child(3) p {
+  background-color: #fff856;
+  width: 170px;
+  height: 20px;
+}
+
+.card_bottom {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  align-items: center;
+}
+
+.card_bottom p {
+  margin: 0;
+}
+
+.card_bottom p:nth-child(1) {
+  font-size: 24px;
+  font-weight: 700;
+  width: 200px;
+  text-align: center;
+  color: white;
+}
+
+.card_bottom p:nth-child(2) {
+  font-size: 14px;
+  font-weight: 400;
+  width: 80%;
+  text-align: center;
+  color: white;
+}
+
+.course_card_btn {
+  font-size: 16px;
+  font-weight: 700;
+  height: 34px;
+  width: 160px;
+  position: relative;
+  border: none;
+  border-radius: 96px;
+  text-align: center;
+  color: white;
+  background-color: #ffdd00;
+  transition: transform 0.3s ease;
+}
+
+.course_card_btn:hover {
+  transform: translate(0, -8px);
+  box-shadow: #ffdd0044 0px 10px 10px;
+}

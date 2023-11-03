@@ -1,0 +1,21 @@
+header {
+    padding: 8px 160px;
+    background-color: rgba(236, 246, 255, 1);
+}
+
+header img {
+    height: 48px;
+}
+
+header ul {
+    list-style: none;
+    gap: 2vw;
+    font-weight: 600;
+    cursor: pointer;
+    color: rgba(102, 102, 102, 1);
+}
+
+header ul li:hover {
+    color: black;
+    transition: color 0.3s ease-in;
+}
