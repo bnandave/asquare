@@ -1,3 +1,13 @@
+.card_container {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 60px 0px;
+  row-gap: 40px;
+  width: calc(100vw - 320px);
+}
+
 .courses {
   padding: 60px 160px;
   background-color: rgba(236, 246, 255, 1);
@@ -17,18 +27,24 @@
   text-align: center;
 }
 
-.courses_upper div {
+.subject_list {
   list-style: none;
   background-color: white;
   height: 60px;
-  width: 650px;
+  width: 780px;
   border-radius: 116px;
   padding: 0 60px;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%);
+  margin-top: 30px;
 }
 
-.courses_upper div li {
+.subject_list li {
   font-size: 16px;
   font-weight: 400;
+  width: 180px;
+  text-align: center;
 }
 
 /* course card css code below */
@@ -39,8 +55,21 @@
   background: none;
   border-radius: 16px;
   border: none;
-  display: inline-block;
   align-items: center;
+  position: relative;
+  display: inline-block;
+}
+
+.card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.295), rgba(0, 0, 0, 0));
+  pointer-events: none;
+  border-radius: 16px;
 }
 
 .card_img {
@@ -50,7 +79,38 @@
   object-fit: cover;
 }
 
-.card_content {
+.card_top {
+  display: none;
+}
+
+.card_bottom {
+  display: none;
+}
+
+.heading_no_hover {
+  font-size: 24px;
+  font-weight: 700;
+  width: 200px;
+  text-align: center;
+  color: white;
+  display: inline-block;
+  position: relative;
+  top: -100px;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.card_bottom p:nth-child(2) {
+  display: none;
+}
+
+.course_card_btn {
+  display: none;
+}
+
+/* when card hover */
+
+.card:hover .card_content {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -62,62 +122,62 @@
   padding: 24px 0;
 }
 
-.card_top {
+.card:hover .card_top {
   display: flex;
   flex-direction: column;
   gap: 6px;
 }
 
-.card_top_containers p {
+.card:hover .card_top_containers p {
   display: inline-block;
   font-size: 14px;
   font-weight: 400;
   margin: 0;
 }
 
-.card_top_containers img {
+.card:hover .card_top_containers img {
   position: relative;
   top: -1.4px;
   height: 20px;
   width: fit-content;
 }
 
-.card_top p {
+.card:hover .card_top p {
   margin: 0;
   width: 200px;
   padding: 0px 10px;
 }
 
-.card_top div:nth-child(1) p {
+.card:hover .card_top div:nth-child(1) p {
   background-color: #fffef1;
   width: 130px;
   height: 20px;
 }
 
-.card_top div:nth-child(2) p {
+.card:hover .card_top div:nth-child(2) p {
   background-color: #fffcb2;
   width: 150px;
   height: 20px;
 }
 
-.card_top div:nth-child(3) p {
+.card:hover .card_top div:nth-child(3) p {
   background-color: #fff856;
   width: 170px;
   height: 20px;
 }
 
-.card_bottom {
+.card:hover .card_bottom {
   display: flex;
   flex-direction: column;
   gap: 18px;
   align-items: center;
 }
 
-.card_bottom p {
+.card:hover .card_bottom p {
   margin: 0;
 }
 
-.card_bottom p:nth-child(1) {
+.card:hover .card_bottom p:nth-child(1) {
   font-size: 24px;
   font-weight: 700;
   width: 200px;
@@ -125,15 +185,17 @@
   color: white;
 }
 
-.card_bottom p:nth-child(2) {
+.card:hover .card_bottom p:nth-child(2) {
   font-size: 14px;
   font-weight: 400;
   width: 80%;
   text-align: center;
   color: white;
+  display: block;
 }
 
-.course_card_btn {
+.card:hover .course_card_btn {
+  display: block;
   font-size: 16px;
   font-weight: 700;
   height: 34px;
@@ -147,7 +209,11 @@
   transition: transform 0.3s ease;
 }
 
-.course_card_btn:hover {
+.card:hover .course_card_btn:hover {
   transform: translate(0, -8px);
   box-shadow: #ffdd0044 0px 10px 10px;
+}
+
+.card:hover .heading_no_hover{
+  display: none;
 }
