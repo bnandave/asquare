@@ -1,5 +1,5 @@
 import React from 'react';
-// import './Courses.css';
+import './Courses.css';
 import '../style.css';
 import Courses_Card_All from './Courses_Card_All';
 import Courses_Data from './Courses_Data';

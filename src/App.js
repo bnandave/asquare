@@ -5,6 +5,10 @@ import Hero from './Components/Hero/Hero';
 import Success from './Components/Success/Success';
 import About from './Components/About/About.jsx';
 import Courses from './Components/Courses/Courses.jsx';
+import Faculty from './Components/Faculty/Faculty.jsx';
+import Testimonials from './Components/Testimonials/Testimonials.jsx';
+import Result from './Components/Result/Result.jsx';
+import FAQ from './Components/FAQ/FAQ.jsx';
 
 function App() {
   return (
@@ -14,7 +18,11 @@ function App() {
       <Hero />
       <Success />
       <About />
-      <Courses/>
+      <Courses />
+      <Faculty />
+      <Testimonials />
+      <Result />
+      <FAQ />
     </div>
   );
 }
