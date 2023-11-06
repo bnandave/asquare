@@ -13,8 +13,8 @@ function Faculty() {
   return (
     <div className="faculty_section">
       <div className="faculty_section_left">
-        <div class="title_aaa">
-          <span class="block_aaa"></span>
+        <div className="title_aaa">
+          <span className="block_aaa"></span>
           <h1>
             Faculty<span></span>
           </h1>

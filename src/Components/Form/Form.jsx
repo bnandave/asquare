@@ -6,69 +6,62 @@ function Form() {
   return (
     <div className="form">
       <div className="container">
-      <div class="title_aaa">
-        <span class="block_aaa"></span>
-        <h1>
-          Enquiry Form<span></span>
-        </h1>
-      </div>
+        <div className="title_aaa">
+          <span className="block_aaa"></span>
+          <h1>
+            Enquiry Form<span></span>
+          </h1>
+        </div>
         <p className="subtitle">
           Transforming Your Curiosity into Confidence and Success
         </p>
         <div className="data_container">
           <input
             type="text"
-            id="name"
-            name="name"
+            name="firstName"
             required
-            maxlength="28"
+            maxLength="28"
             placeholder="Full Name"
           />
           <input
             type="text"
-            id="name"
-            name="name"
+            name="lastName"
             required
-            maxlength="28"
+            maxLength="28"
             placeholder="Last Name"
           />
           <input
-            type="text"
-            id="name"
-            name="name"
+            type="number"
+            name="contact"
             required
-            maxlength="28"
+            maxLength="28"
             placeholder="Phone Number"
           />
           <input
             type="text"
-            id="name"
-            name="name"
-            maxlength="28"
+            name="gmail"
+            maxLength="28"
             placeholder="Email ID (Optional)"
           />
           <input
             type="text"
-            id="name"
-            name="name"
+            name="course"
             required
-            maxlength="28"
+            maxLength="28"
             placeholder="Course"
           />
           <input
             type="text"
-            id="name"
-            name="name"
+            name="location"
             required
-            maxlength="28"
+            maxLength="28"
             placeholder="Location (Optional)"
           />
           <input
             type="text"
-            id="name"
-            name="name"
+            name="feedback"
             required
-            maxlength="108"
+            maxLength="108"
             placeholder="Feedback"
           />
         </div>

@@ -60,8 +60,8 @@ function Testimonials() {
   }
   return (
     <div className="testi">
-      <div class="title_aaa">
-        <span class="block_aaa"></span>
+      <div className="title_aaa">
+        <span className="block_aaa"></span>
         <h1>
           Testimonials<span></span>
         </h1>

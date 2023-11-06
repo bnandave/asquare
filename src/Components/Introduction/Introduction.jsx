@@ -6,8 +6,8 @@ import '../style.css';
 function Introduction() {
   return (
     <div className="introduction">
-      <div class="title_aaa">
-        <span class="block_aaa"></span>
+      <div className="title_aaa">
+        <span className="block_aaa"></span>
         <h1>
           Introduction<span></span>
         </h1>

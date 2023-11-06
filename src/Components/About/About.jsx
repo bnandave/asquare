@@ -63,8 +63,8 @@ function About() {
         </div>
       </div>
       <div className="about_us_p2">
-        <div class="title_aaa about_us_title">
-          <span class="block_aaa"></span>
+        <div className="title_aaa about_us_title">
+          <span className="block_aaa"></span>
           <h1>
             About Us<span></span>
           </h1>

@@ -8,8 +8,8 @@ function Result() {
   return (
     <div className="result">
       <div className="result_left">
-        <div class="title_aaa">
-          <span class="block_aaa"></span>
+        <div className="title_aaa">
+          <span className="block_aaa"></span>
           <h1>
             Result<span></span>
           </h1>

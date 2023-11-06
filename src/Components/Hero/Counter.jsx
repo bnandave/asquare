@@ -21,7 +21,7 @@ function Counter(props) {
   }, []);
 
   return (
-    <div className="flex-centre-bet">
+    <div className="flex-centre-bet" key={props.id}>
       <p>{`${count} ${sign}`}</p>
       <p>{props.course}</p>
     </div>

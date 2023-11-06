@@ -1,18 +1,50 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Courses.css';
 import '../style.css';
-import Courses_Card_All from './Courses_Card_All';
-import Courses_Data from './Courses_Data';
+import { Course_Data, subjects_name } from './Courses_Data';
 import triangle_1 from '../Assets/triangle_1.png';
 import triangle_2 from '../Assets/triangle_2.png';
 import triangle_3 from '../Assets/triangle_3.png';
 
 function Courses() {
+  //
+  let [index, setIndex] = useState(0);
+
+  function card(details_data) {
+    return (
+      <div className="card" key={details_data.id}>
+        <img src={details_data.student_img} alt="img" className="card_img" />
+        <div className="card_content">
+          <div className="card_top">
+            <div className="card_top_containers">
+              <p>{details_data.status}</p>
+              <img src={triangle_1} alt="icon" />
+            </div>
+            <div className="card_top_containers">
+              <p>{details_data.class}</p>
+              <img src={triangle_2} alt="icon" />
+            </div>
+            <div className="card_top_containers">
+              <p>{details_data.target_year}</p>
+              <img src={triangle_3} alt="icon" />
+            </div>
+          </div>
+          <div className="card_bottom">
+            <p>{details_data.heading}</p>
+            <p>{details_data.sub_heading}</p>
+            <button className="course_card_btn">Know More</button>
+          </div>
+        </div>
+        <p className="heading_no_hover">{details_data.heading}</p>
+      </div>
+    );
+  }
+
   return (
     <div className="courses">
       <div className="courses_upper">
-        <div class="title_aaa">
-          <span class="block_aaa"></span>
+        <div className="title_aaa">
+          <span className="block_aaa"></span>
           <h1>
             Courses<span></span>
           </h1>
@@ -24,42 +56,22 @@ function Courses() {
       <div className="courses_cards">
         <div>
           <div className="flex-centre-bet subject_list">
-            <li>JEE Mains</li>
-            <li>JEE Advance</li>
-            <li>NEET</li>
-            <li>Foundation</li>
+            {subjects_name.map((subject_data) => (
+              <li
+                key={subject_data.id}
+                btn_index={subject_data.id}
+                onClick={() => setIndex(subject_data.id - 1)}
+                className={
+                  index == subject_data.id - 1
+                    ? 'subject_selected'
+                    : 'subject_not_selected'
+                }
+              >
+                {subject_data.subject}
+              </li>
+            ))}
           </div>
-          <div className="card_container">
-            <div className="card">
-              <img
-                src="https://i.ibb.co/TTrj2Rx/student-img-2.jpg"
-                alt="img"
-                className="card_img"
-              />
-              <div className="card_content">
-                <div className="card_top">
-                  <div className="card_top_containers">
-                    <p>Admission Open</p>
-                    <img src={triangle_1} alt="icon" />
-                  </div>
-                  <div className="card_top_containers">
-                    <p>Class 11th Students</p>
-                    <img src={triangle_2} alt="icon" />
-                  </div>
-                  <div className="card_top_containers">
-                    <p>Target Year is 2025</p>
-                    <img src={triangle_3} alt="icon" />
-                  </div>
-                </div>
-                <div className="card_bottom">
-                  <p>- Two Year Programme -</p>
-                  <p>Your Path to Academic Excellence and Future Achievement</p>
-                  <button className="course_card_btn">Know More</button>
-                </div>
-              </div>
-              <p className="heading_no_hover">- Two Year Programme -</p>
-            </div>
-          </div>
+          <div className="card_container">{Course_Data[index].map(card)}</div>
         </div>
       </div>
     </div>

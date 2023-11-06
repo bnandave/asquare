@@ -40,12 +40,30 @@
   margin-top: 30px;
 }
 
-.subject_list li {
+.subject_not_selected {
   font-size: 16px;
   font-weight: 400;
   width: 180px;
   text-align: center;
   cursor: pointer;
+}
+
+.subject_selected {
+  padding: 2px 6px;
+  cursor: pointer;
+  border: none;
+  border-radius: 96px;
+  width: 180px;
+  height: 30px;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 4px;
+  color: white;
+  background-color: #ffdd00;
+  transition: transform 0.3s ease;
+  transform: translateY(-2px);
+  box-shadow: #ffdd0044 0px 10px 10px;
 }
 
 /* course card css code below */
@@ -215,6 +233,6 @@
   box-shadow: #ffdd0044 0px 10px 10px;
 }
 
-.card:hover .heading_no_hover{
+.card:hover .heading_no_hover {
   display: none;
 }

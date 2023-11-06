@@ -23,8 +23,8 @@ function Updates() {
   return (
     <div className="updates">
       <div className="updates_left">
-        <div class="title_aaa">
-          <span class="block_aaa"></span>
+        <div className="title_aaa">
+          <span className="block_aaa"></span>
           <h1>
             Live Updates<span></span>
           </h1>

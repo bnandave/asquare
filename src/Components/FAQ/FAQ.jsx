@@ -5,7 +5,6 @@ import './FAQ.css';
 
 function FAQ() {
   function questions(data, index) {
-    console.log(data.question);
     return (
       <div key={index}>
         <li>{data.question}</li>
@@ -17,8 +16,8 @@ function FAQ() {
   return (
     <div className="faq">
       <div className="faq_left">
-        <div class="title_aaa">
-          <span class="block_aaa"></span>
+        <div className="title_aaa">
+          <span className="block_aaa"></span>
           <h1>
             Frequently Asked Questions<span></span>
           </h1>
