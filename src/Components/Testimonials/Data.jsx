@@ -6,7 +6,7 @@ const Data = [
     feedback:
       'Thanks to Asquare Classes, I conquered my exams with confidence and achieved my goals. Their unwavering support changed my life!',
     img: 'https://i.ibb.co/TTrj2Rx/student-img-2.jpg',
-    rating: 4
+    rating: [1,1,1,1,0]
   },
   {
     id: 2,

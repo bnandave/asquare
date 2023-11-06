@@ -43,7 +43,15 @@ function About() {
     <div className="about_us flex-centre-bet">
       <div className="about_us_p1">
         <img src={about_1} className="about_us_img_1"></img>
-        <div className="about_us_p1_details"  style={is_about_us_p1_animate ? {animation: `slide_in 1.5s ease-in`} : null} ref={targetDivRef}>
+        <div
+          className="about_us_p1_details"
+          style={
+            is_about_us_p1_animate
+              ? { animation: `slide_in 1.5s ease-in` }
+              : null
+          }
+          ref={targetDivRef}
+        >
           <div>
             <img src={point_icon_2} className="pointer_icon"></img>
             <p className="text">Postgraduate Degree in Physics</p>
@@ -55,7 +63,12 @@ function About() {
         </div>
       </div>
       <div className="about_us_p2">
-        <p className="title">About Us</p>
+        <div class="title_aaa about_us_title">
+          <span class="block_aaa"></span>
+          <h1>
+            About Us<span></span>
+          </h1>
+        </div>
         <p className="subtitle">Discover Our Inspiring Educational Journey</p>
         <div>
           <div>

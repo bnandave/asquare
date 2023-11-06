@@ -13,7 +13,12 @@ function Faculty() {
   return (
     <div className="faculty_section">
       <div className="faculty_section_left">
-        <p className="title">Faculty</p>
+        <div class="title_aaa">
+          <span class="block_aaa"></span>
+          <h1>
+            Faculty<span></span>
+          </h1>
+        </div>
         <p className="subtitle">Faculty, Academic Guides & Mentors</p>
         <p className="text">
           Meet Our Diverse Team of Accomplished Educators Committed to Nurturing
@@ -23,7 +28,11 @@ function Faculty() {
           <li
             key={facultyMember.id}
             onClick={() => setSelectedFaculty(facultyMember.name)}
-            className={facultyMember.name === selectedFaculty ? 'selected' : 'not_selected'}
+            className={
+              facultyMember.name === selectedFaculty
+                ? 'selected'
+                : 'not_selected'
+            }
           >
             {facultyMember.name}
           </li>

@@ -9,6 +9,11 @@ import Faculty from './Components/Faculty/Faculty.jsx';
 import Testimonials from './Components/Testimonials/Testimonials.jsx';
 import Result from './Components/Result/Result.jsx';
 import FAQ from './Components/FAQ/FAQ.jsx';
+import Updates from './Components/Live_Updates/Updates.jsx';
+import Introduction from './Components/Introduction/Introduction.jsx';
+import Form from './Components/Form/Form.jsx';
+import Change from './Components/Change/Change.jsx';
+import Footer from './Components/Footer/Footer.jsx';
 
 function App() {
   return (
@@ -23,6 +28,11 @@ function App() {
       <Testimonials />
       <Result />
       <FAQ />
+      <Updates />
+      <Introduction />
+      <Form />
+      {/* <Change /> */}
+      <Footer />
     </div>
   );
 }

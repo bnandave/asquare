@@ -8,7 +8,6 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 10px;
   background-color: #bfe0ff;
   width: 900px;
   padding: 40px 40px;

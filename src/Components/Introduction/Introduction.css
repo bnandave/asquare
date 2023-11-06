@@ -1,0 +1,26 @@
+.introduction {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  padding: 60px 160px;
+  background-color: rgba(236, 246, 255, 1);
+  height: 500px;
+  margin-bottom: 260px;
+}
+
+.introduction p {
+    text-align: center;
+}
+
+.introduction p:nth-child(2) {
+    width: 560px;
+}
+
+.introduction img {
+    display: inline-block;
+    position: relative;
+    top: -160px;
+    cursor: pointer;
+    width: 1200px;
+}

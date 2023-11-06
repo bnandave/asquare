@@ -8,7 +8,12 @@ function Result() {
   return (
     <div className="result">
       <div className="result_left">
-        <p className="title">Results</p>
+        <div class="title_aaa">
+          <span class="block_aaa"></span>
+          <h1>
+            Result<span></span>
+          </h1>
+        </div>
         <p className="subtitle result_subtitle">
           Our Students' Exceptional Results and Success Stories
         </p>

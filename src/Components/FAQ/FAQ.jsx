@@ -9,7 +9,7 @@ function FAQ() {
     return (
       <div key={index}>
         <li>{data.question}</li>
-        <img src={Arrow} alt="icon" />
+        <img src={Arrow} alt="icon" className="icon_img" />
         <p className="answer">{data.answer}</p>
       </div>
     );
@@ -17,7 +17,12 @@ function FAQ() {
   return (
     <div className="faq">
       <div className="faq_left">
-        <p className="title">Frequently Asked Questions</p>
+        <div class="title_aaa">
+          <span class="block_aaa"></span>
+          <h1>
+            Frequently Asked Questions<span></span>
+          </h1>
+        </div>
         <p className="subtitle">
           Answers to Common Inquiries for a Smooth Experience with Us
         </p>

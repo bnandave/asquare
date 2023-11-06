@@ -7,10 +7,10 @@
 .faq_left {
   width: 480px;
   background-color: white;
-  padding: 60px 20px;
+  padding: 90px 20px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  /* justify-content: center; */
   gap: 20px;
 }
 
@@ -25,9 +25,10 @@
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  height: 480px;
+  /* height: 480px; */
   gap: 20px;
   overflow-y: hidden;
+  width: 60%;
 }
 
 .faq_right div {
@@ -35,7 +36,7 @@
   flex-wrap: wrap;
   gap: 10px;
   justify-content: space-between;
-  width: 480px;
+  width: 90%;
   background-color: white;
   height: fit-content;
   padding: 10px 20px;
@@ -60,14 +61,24 @@
 
 .answer {
   display: none;
-  width: 480px;
+  /* width: 540px; */
   padding: 2px 20px;
+  color: rgba(102, 102, 102, 1);
+  font-size: 14px;
 }
 
-.faq_right div:active .answer {
+.faq_right div:hover {
+  cursor: pointer;
+}
+
+.faq_right div:hover .answer {
   display: block;
 }
 
-.faq_right div:not(:active) .answer{
-  display: none;
+.faq_right div:hover .icon_img {
+  transform: rotate(-90deg);
 }
+
+/* .faq_right div:not(:active) .answer{
+  display: none;
+} */

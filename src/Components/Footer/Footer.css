@@ -1,0 +1,115 @@
+.footer {
+  background-color: #bfe0ff;
+  display: flex;
+  flex-direction: column;
+  padding: 60px 160px 0px;
+}
+
+.top_container {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding-bottom: 30px;
+  border-bottom: 0.4px solid rgba(0, 0, 0, 0.194);
+}
+
+.top_container ul {
+  margin: 0;
+  padding: 0;
+}
+
+.top_container ul:first-child {
+  margin-right: 100px;
+}
+
+.top_container li {
+  margin-bottom: 10px;
+  list-style: none;
+  color: #808080;
+  padding: 0;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: color 0.3s ease-in;
+}
+
+.top_container li:hover {
+    color: #4e4e4e;
+}
+
+.top_container li:first-child {
+  font-size: 16px;
+  color: black;
+  margin-bottom: 30px;
+  cursor: context-menu;
+}
+
+.top_container_1 {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 18px;
+}
+
+.top_container_1 img {
+  height: 40px;
+  width: 40px;
+}
+
+.top_container_1 div {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.top_container_1 div p {
+  margin: 0;
+}
+
+.top_container_1 div p:first-child {
+    font-weight: 600;
+}
+
+.top_container_1 div p:last-child {
+    color: #808080;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.top_container_1 div p:last-child:hover {
+    transition: color 0.3s ease-in;
+    color: #4e4e4e;
+}
+
+.bottom_container {
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.bottom_container p {
+    color: #808080;
+    font-weight: 400;
+    font-size: 14px;
+    margin: 0;
+    cursor: context-menu;
+}
+
+.bottom_container p:hover {
+    transition: color 0.3s ease-in;
+    color: #4e4e4e;
+}
+
+.bottom_container div {
+    display: flex;
+    gap: 4px;
+}
+
+.bottom_container div img{
+    height: 22px;
+    width: 22px;
+    cursor: pointer;
+}
+

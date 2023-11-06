@@ -32,7 +32,7 @@
   position: relative;
   top: -24px;
   animation: text_slide 3s ease-in infinite;
-  width: 160px;
+  width: 180px;
 }
 
 @keyframes text_slide {

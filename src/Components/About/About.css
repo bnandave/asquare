@@ -51,6 +51,12 @@
     gap: 20px;
 }
 
+.about_us_title {
+    display: inline-block;
+    position: relative;
+    top: 20px;
+}
+
 .about_us_p2 div {
     display: flex;
     flex-direction: column;
