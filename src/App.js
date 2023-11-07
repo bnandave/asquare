@@ -1,38 +1,25 @@
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import './App.css';
+import Home from './Pages/Home';
+import Course from './Pages/Course';
+import About from './Pages/About';
 import Navbar from './Components/Navbar/Navbar';
 import Header from './Components/Header/Header';
-import Hero from './Components/Hero/Hero';
-import Success from './Components/Success/Success';
-import About from './Components/About/About.jsx';
-import Courses from './Components/Courses/Courses.jsx';
-import Faculty from './Components/Faculty/Faculty.jsx';
-import Testimonials from './Components/Testimonials/Testimonials.jsx';
-import Result from './Components/Result/Result.jsx';
-import FAQ from './Components/FAQ/FAQ.jsx';
-import Updates from './Components/Live_Updates/Updates.jsx';
-import Introduction from './Components/Introduction/Introduction.jsx';
-import Form from './Components/Form/Form.jsx';
-import Change from './Components/Change/Change.jsx';
 import Footer from './Components/Footer/Footer.jsx';
 
 function App() {
   return (
     <div>
-      <Navbar />
-      <Header />
-      <Hero />
-      <Success />
-      <About />
-      <Courses />
-      <Faculty />
-      <Testimonials />
-      <Result />
-      <FAQ />
-      <Updates />
-      <Introduction />
-      <Form />
-      {/* <Change /> */}
-      <Footer />
+      <BrowserRouter>
+        <Navbar />
+        <Header />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/course" element={<Course />} />
+          <Route path="/about" element={<About />} />
+        </Routes>
+        <Footer />
+      </BrowserRouter>
     </div>
   );
 }

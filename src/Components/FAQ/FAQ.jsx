@@ -2,8 +2,14 @@ import React from 'react';
 import Arrow from '../Assets/point-icon.png';
 import Data from './Data';
 import './FAQ.css';
+import { useInView } from 'react-intersection-observer';
 
 function FAQ() {
+  //
+  const [ref, inView] = useInView({
+    triggerOnce: true // Trigger only once
+  });
+
   function questions(data, index) {
     return (
       <div key={index}>
@@ -16,7 +22,7 @@ function FAQ() {
   return (
     <div className="faq">
       <div className="faq_left">
-        <div className="title_aaa">
+        <div ref={ref} className={`section ${inView ? 'title_aaa' : ''}`}>
           <span className="block_aaa"></span>
           <h1>
             Frequently Asked Questions<span></span>

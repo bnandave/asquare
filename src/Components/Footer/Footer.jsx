@@ -41,6 +41,7 @@ function Footer() {
           <li>Get in touch</li>
         </ul>
         <ul>
+        <li>Contact Us</li>
           <div className='top_container_1'>
             <img src={location} alt="icon" />
             <div>

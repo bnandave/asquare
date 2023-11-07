@@ -12,8 +12,8 @@ nav p {
 }
 
 nav p:hover {
-    text-decoration: underline 1.2px rgb(3, 0, 39);
-    color: rgb(3, 0, 39);
+  text-decoration: underline 1.2px rgb(3, 0, 39);
+  color: rgb(3, 0, 39);
 }
 
 .social-media-icons {
@@ -24,4 +24,11 @@ nav p:hover {
 .social-media-icons img {
   height: 14px;
   width: 14px;
+  opacity: 0.6;
 }
+
+.social-media-icons img:hover {
+  transition: opacity 0.4s ease-in;
+  opacity: 0.9;
+}
+

@@ -5,8 +5,14 @@ import { Course_Data, subjects_name } from './Courses_Data';
 import triangle_1 from '../Assets/triangle_1.png';
 import triangle_2 from '../Assets/triangle_2.png';
 import triangle_3 from '../Assets/triangle_3.png';
+import { useInView } from 'react-intersection-observer';
 
 function Courses() {
+  //
+  const [ref, inView] = useInView({
+    triggerOnce: true // Trigger only once
+  });
+
   //
   let [index, setIndex] = useState(0);
 
@@ -43,7 +49,7 @@ function Courses() {
   return (
     <div className="courses">
       <div className="courses_upper">
-        <div className="title_aaa">
+        <div ref={ref} className={`section ${inView ? 'title_aaa' : ''}`}>
           <span className="block_aaa"></span>
           <h1>
             Courses<span></span>

@@ -2,13 +2,19 @@ import React, { useState } from 'react';
 
 import './Testimonials.css';
 import '../style.css';
-import teacher_img_1 from '../Assets/student-img-1.png';
+// import teacher_img_1 from '../Assets/student-img-1.png';
 import hollow_star_icon from '../Assets/hollow-star-icon.png';
 import gold_star_icon from '../Assets/gold-star-icon.png';
 import arrow_logo_2 from '../Assets/arrow-logo-2.png';
 import Data from './Data';
+import { useInView } from 'react-intersection-observer';
 
 function Testimonials() {
+  //
+  const [ref, inView] = useInView({
+    triggerOnce: true // Trigger only once
+  });
+
   let [index, setIndex] = useState(0);
 
   let i = index;
@@ -33,7 +39,7 @@ function Testimonials() {
   // setInterval(update_index, 3000);
 
   function testimonial(data) {
-    if (data.id == Data[i].id) {
+    if (data.id === Data[i].id) {
       return (
         <div className="testi_container" key={data.id}>
           <div className="testi_container_left">
@@ -60,7 +66,7 @@ function Testimonials() {
   }
   return (
     <div className="testi">
-      <div className="title_aaa">
+      <div ref={ref} className={`section ${inView ? 'title_aaa' : ''}`}>
         <span className="block_aaa"></span>
         <h1>
           Testimonials<span></span>

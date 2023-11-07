@@ -1,12 +1,18 @@
 import React from 'react';
 import './Form.css';
 import '../style.css';
+import { useInView } from 'react-intersection-observer';
 
 function Form() {
+  //
+  const [ref, inView] = useInView({
+    triggerOnce: true // Trigger only once
+  });
+
   return (
     <div className="form">
       <div className="container">
-        <div className="title_aaa">
+        <div ref={ref} className={`section ${inView ? 'title_aaa' : ''}`}>
           <span className="block_aaa"></span>
           <h1>
             Enquiry Form<span></span>

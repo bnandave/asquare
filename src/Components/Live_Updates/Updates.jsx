@@ -3,8 +3,14 @@ import student_img_5 from '../Assets/student-img-5.png';
 import update_logo from '../Assets/update-logo.png';
 import './Updates.css';
 import '../style.css';
+import { useInView } from 'react-intersection-observer';
 
 function Updates() {
+  //
+  const [ref, inView] = useInView({
+    triggerOnce: true // Trigger only once
+  });
+
   const Data = [
     { id: 1, update: 'New Course Offerings for the Upcoming Academic Year' },
     { id: 2, update: 'Join Us for the Annual Science Symposium!' },
@@ -23,7 +29,7 @@ function Updates() {
   return (
     <div className="updates">
       <div className="updates_left">
-        <div className="title_aaa">
+        <div ref={ref} className={`section ${inView ? 'title_aaa' : ''}`}>
           <span className="block_aaa"></span>
           <h1>
             Live Updates<span></span>

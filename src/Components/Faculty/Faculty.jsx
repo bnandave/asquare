@@ -3,8 +3,14 @@ import './Faculty.css';
 import '../style.css';
 import point_icon_3 from '../Assets/point-icon-3.png';
 import Faculty_Data from './Faculty_Data';
+import { useInView } from 'react-intersection-observer';
 
 function Faculty() {
+  //
+  const [ref, inView] = useInView({
+    triggerOnce: true // Trigger only once
+  });
+
   const [selectedFaculty, setSelectedFaculty] = useState('Rajesh Kumar'); // Set the default selected faculty
 
   // Find the faculty object based on the selected name
@@ -13,7 +19,7 @@ function Faculty() {
   return (
     <div className="faculty_section">
       <div className="faculty_section_left">
-        <div className="title_aaa">
+        <div ref={ref} className={`section ${inView ? 'title_aaa' : ''}`}>
           <span className="block_aaa"></span>
           <h1>
             Faculty<span></span>

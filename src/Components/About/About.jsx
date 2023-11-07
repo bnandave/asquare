@@ -4,8 +4,15 @@ import '../style.css';
 import about_1 from '../Assets/about-1.jpg';
 import about_2 from '../Assets/about-2.jpg';
 import point_icon_2 from '../Assets/point-icon-2.png';
+import { useInView } from 'react-intersection-observer';
 
 function About() {
+  //
+  const [ref, inView] = useInView({
+    triggerOnce: true // Trigger only once
+  });
+
+  //
   const targetDivRef = useRef(null);
   let [is_about_us_p1_animate, setAnimate] = useState(true);
 
@@ -63,7 +70,10 @@ function About() {
         </div>
       </div>
       <div className="about_us_p2">
-        <div className="title_aaa about_us_title">
+        <div
+          ref={ref}
+          className={`section ${inView ? 'title_aaa about_us_title' : ''}`}
+        >
           <span className="block_aaa"></span>
           <h1>
             About Us<span></span>

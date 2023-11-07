@@ -3,12 +3,18 @@ import '../style.css';
 import point_icon_2 from '../Assets/point-icon-2.png';
 import arrow_logo_2 from '../Assets/arrow-logo-2.png';
 import result_poster from '../Assets/result-poster.jpg';
+import { useInView } from 'react-intersection-observer';
 
 function Result() {
+  //
+  const [ref, inView] = useInView({
+    triggerOnce: true // Trigger only once
+  });
+
   return (
     <div className="result">
       <div className="result_left">
-        <div className="title_aaa">
+        <div ref={ref} className={`section ${inView ? 'title_aaa' : ''}`}>
           <span className="block_aaa"></span>
           <h1>
             Result<span></span>
