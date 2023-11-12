@@ -10,7 +10,7 @@ import youtube_logo from '../Assets/logo-youtube.png';
 
 const Navbar = () => {
   return (
-    <nav className='flex-centre-bet'>
+    <nav>
       <p>(+91)-9404282283</p>
       <div className="social-media-icons">
         <img src={facebook_logo} alt="facebook_logo" />

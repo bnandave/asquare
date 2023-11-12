@@ -61,11 +61,11 @@ function About() {
         >
           <div>
             <img src={point_icon_2} className="pointer_icon"></img>
-            <p className="text">Postgraduate Degree in Physics</p>
+            <p className="text about_text">Postgraduate Degree in Physics</p>
           </div>
           <div>
             <img src={point_icon_2} className="pointer_icon"></img>
-            <p className="text">Bachelor of Education (B.Ed.)</p>
+            <p className="text about_text">Bachelor of Education (B.Ed.)</p>
           </div>
         </div>
       </div>
@@ -79,22 +79,22 @@ function About() {
             About Us<span></span>
           </h1>
         </div>
-        <p className="subtitle">Discover Our Inspiring Educational Journey</p>
+        <p className="subtitle about_subtitle">Discover Our Inspiring Educational Journey</p>
         <div>
           <div>
             <img src={point_icon_2} className="pointer_icon"></img>
-            <p className="text">Commitment to Academic Excellence</p>
+            <p className="text about_text">Commitment to Academic Excellence</p>
           </div>
           <div>
             <img src={point_icon_2} className="pointer_icon"></img>
-            <p className="text">Inspiring Lifelong Learning Journeys</p>
+            <p className="text about_text">Inspiring Lifelong Learning Journeys</p>
           </div>
           <div>
             <img src={point_icon_2} className="pointer_icon"></img>
-            <p className="text">Commitment to Academic Excellence</p>
+            <p className="text about_text">Commitment to Academic Excellence</p>
           </div>
         </div>
-        <button className="button">Know More</button>
+        <button className="button know_more_btn">Know More</button>
       </div>
       <div className="about_us_p3">
         <img src={about_2}></img>

@@ -69,8 +69,8 @@ function Courses() {
                 onClick={() => setIndex(subject_data.id - 1)}
                 className={
                   index == subject_data.id - 1
-                    ? 'subject_selected'
-                    : 'subject_not_selected'
+                    ? 'subject_selected sub_btn'
+                    : 'subject_not_selected sub_btn'
                 }
               >
                 {subject_data.subject}

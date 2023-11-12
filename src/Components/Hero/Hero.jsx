@@ -1,7 +1,7 @@
 import React from 'react';
 import './Hero.css';
 import '../style.css';
-import hero_img from '../Assets/Teacher student-pana.png';
+import hero_img from '../Assets/Teacher-student-pana.png';
 import Counter from './Counter';
 import Count_Data from './Count_Data';
 // import btn from '../Btn/Btn';
@@ -15,7 +15,7 @@ function Hero() {
           Fueling Dreams with Quality Education, Shaping Tomorrow's Leaders, One
           Student at a Time
         </p>
-        <button className="button">Courses</button>
+        <button className="hero_button">Courses</button>
         <div className="hero_counter flex-centre-bet">
           {Count_Data.map(Counter)}
         </div>

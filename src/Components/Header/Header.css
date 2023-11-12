@@ -30,3 +30,71 @@ header ul li:hover {
   color: black;
   transition: color 0.3s ease-in;
 }
+
+.side_bar {
+  display: none;
+}
+
+@media (min-width: 1480px) {
+  header {
+    padding: 8px 14vw;
+  }
+
+  header img {
+    height: 3.4vw;
+  }
+
+  header ul, .link_tag {
+    font-size: 1.2vw;
+  }
+}
+
+@media (max-width: 1480px) {
+  header {
+    padding: 8px 10vw;
+  }
+
+  header img {
+    height: 2.8vw;
+  }
+
+  header ul, .link_tag {
+    font-size: 1.2vw;
+  }
+}
+
+@media (max-width: 1024px) {
+  header {
+    padding: 8px 80px;
+  }
+
+  header img {
+    height: 40px;
+  }
+
+  header ul, .link_tag {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 950px) {
+  header ul li, .link_tag {
+    display: none;
+  }
+
+  .side_bar {
+    display: block;
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 572px) {
+  header {
+    padding: 8px 26px;
+  }
+
+  header img {
+    height: 40px;
+  }
+
+}

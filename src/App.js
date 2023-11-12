@@ -18,7 +18,7 @@ function App() {
           <Route path="/course" element={<Course />} />
           <Route path="/about" element={<About />} />
         </Routes>
-        <Footer />
+        {/* <Footer /> */}
       </BrowserRouter>
     </div>
   );

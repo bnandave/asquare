@@ -21,7 +21,8 @@ function Success() {
 
   return (
     <div className="success">
-      <p>Our Students Secure Seats at</p>
+      <p className='success_text'>Our Students Secure Seats at</p>
+      <p className='success_mob_text'>Seat Secured at</p>
       <p>{name}</p>
     </div>
   );

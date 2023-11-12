@@ -27,8 +27,8 @@
   list-style: none;
   color: #808080;
   padding: 0;
-  font-size: 14px;
-  font-weight: 600;
+  font-size: 12px;
+  font-weight: 400;
   letter-spacing: 1px;
   cursor: pointer;
   transition: color 0.3s ease-in;
@@ -43,6 +43,7 @@
   color: black;
   margin-bottom: 30px;
   cursor: context-menu;
+  font-weight: 600;
 }
 
 .top_container_1 {

@@ -25,12 +25,12 @@ function Home() {
       <About />
       <Courses />
       <Faculty />
-      <Testimonials />
+      {/*<Testimonials />
       <Result />
       <FAQ />
       <Updates />
       <Introduction />
-      <Form />
+      <Form /> */}
       {/* <Change /> */}
       {/* <Footer /> */}
     </div>

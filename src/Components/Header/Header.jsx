@@ -15,6 +15,7 @@ const Header = () => {
         <li><Link to={"/about"} className='link_tag'>About Us</Link></li>
         <li>Contact Us</li>
         <li>Payment</li>
+        <li className='side_bar'>☰</li>
       </ul>
     </header>
   );
