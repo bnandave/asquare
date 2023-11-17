@@ -9,8 +9,7 @@
 
 .testi_container {
     display: flex;
-    /* align-items: center; */
-    justify-content: space-between;
+    justify-content: center;
     width: 100%;
 }
 
@@ -79,3 +78,9 @@
     font-size: 12px;
     font-weight: 300;
 }
+
+/* @media (min-width: 1480px) */
+/* @media (max-width: 1480px) */
+/* @media (max-width: 1024px) */
+/* @media (max-width: 950px) */
+/* @media (max-width: 572px) */

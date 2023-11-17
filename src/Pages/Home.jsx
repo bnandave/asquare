@@ -18,21 +18,17 @@ import Form from '../Components/Form/Form.jsx';
 function Home() {
   return (
     <div>
-      {/* <Navbar /> */}
-      {/* <Header /> */}
       <Hero />
       <Success />
       <About />
       <Courses />
       <Faculty />
-      {/*<Testimonials />
+      <Testimonials />
       <Result />
       <FAQ />
       <Updates />
       <Introduction />
-      <Form /> */}
-      {/* <Change /> */}
-      {/* <Footer /> */}
+      <Form />
     </div>
   );
 }

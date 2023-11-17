@@ -5,21 +5,20 @@
 }
 
 .faculty_section_left {
-  padding: 60px 80px 60px 160px;
+  padding: 60px 0px 60px 160px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   background-color: #bfe0ff;
+  width: 80%;
 }
 
 .faculty_section_left p:nth-child(2) {
   width: 380px;
-  line-height: 30px;
 }
 
 .faculty_section_left p:nth-child(3) {
   margin-bottom: 30px;
-  line-height: 20px;
   width: 380px;
 }
 
@@ -120,3 +119,13 @@
   font-weight: 300;
   margin: 0;
 }
+
+@media (min-width: 1480px){
+  /* .faculty_section_left {
+    padding: 60px 80px 60px 160px;
+  } */
+}
+/* @media (max-width: 1480px) */
+/* @media (max-width: 1024px) */
+/* @media (max-width: 950px) */
+/* @media (max-width: 572px) */
