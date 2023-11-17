@@ -200,65 +200,7 @@ p {
   }
 }
 
-@media (min-width: 1480px) {
-  .title_aaa {
-    font-size: 1.2vw;
-  }
-  .subtitle {
-    font-size: 1.6vw;
-    line-height: normal;
-  }
-  .text {
-    font-size: 1vw;
-  }
-}
-@media (max-width: 1480px) {
-  .title_aaa {
-    font-size: 1.2vw;
-  }
 
-  .subtitle {
-    font-size: 1.6vw;
-    line-height: normal;
-  }
-
-  .text {
-    font-size: 0.9vw;
-  }
-}
-@media (max-width: 1024px) {
-  /*  */
-}
-@media (max-width: 950px) {
-  .title_aaa {
-    font-size: 9px;
-  }
-
-  .subtitle {
-    font-size: 20px;
-    line-height: normal;
-  }
-
-  .text {
-    font-size: 8px;
-  }
-}
-@media (max-width: 572px) {
-  .title_aaa {
-    font-size: 9px;
-  }
-
-  .subtitle {
-    font-size: 18px;
-    line-height: normal;
-    width: 90%;
-  }
-
-  .text {
-    font-size: 8px;
-    width: 100%;
-  }
-}
 
 /* @media (min-width: 1480px) */
 /* @media (max-width: 1480px) */
