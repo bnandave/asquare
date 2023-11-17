@@ -1,18 +1,18 @@
-import React from 'react';
+import React, { forwardRef } from 'react';
 import './Form.css';
 import '../style.css';
 import { useInView } from 'react-intersection-observer';
 
-function Form() {
+const Form = forwardRef((props, ref) => {
   //
-  const [ref, inView] = useInView({
-    triggerOnce: true // Trigger only once
+  const [viewRef, inView] = useInView({
+    triggerOnce: true 
   });
 
   return (
-    <div className="form">
+    <div className="form" ref={ref}>
       <div className="container">
-        <div ref={ref} className={`section ${inView ? 'title_aaa' : ''}`}>
+        <div ref={viewRef} className={`section ${inView ? 'title_aaa' : ''}`}>
           <span className="block_aaa"></span>
           <h1>
             Enquiry Form<span></span>
@@ -75,6 +75,6 @@ function Form() {
       </div>
     </div>
   );
-}
+})
 
 export default Form;

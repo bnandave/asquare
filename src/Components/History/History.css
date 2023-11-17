@@ -1,0 +1,18 @@
+.history {
+    padding: 40px 10vw;
+    display: flex;
+    flex-direction: column;
+    gap: 1.6vw;
+    align-items: center;
+}
+
+.history div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.history div p {
+    width: 64%;
+}

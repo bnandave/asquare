@@ -13,7 +13,7 @@ const Header = () => {
         <li><Link to={"/course"} className='link_tag'>Courses</Link></li>
         <li>Faculty</li>
         <li><Link to={"/about"} className='link_tag'>About Us</Link></li>
-        <li>Contact Us</li>
+        <li><Link to={"/contact"} className='link_tag'>Contact Us</Link></li>
         <li>Payment</li>
         <li className='side_bar'>☰</li>
       </ul>

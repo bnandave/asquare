@@ -65,6 +65,12 @@ p {
   color: #434343;
   font-weight: 300;
 }
+/* paragraph */
+.paragraph {
+  font-size: 1.2vw;
+  font-weight: 300;
+  color: rgb(79, 79, 79);
+}
 
 /* title text */
 .title_aaa {
@@ -209,7 +215,6 @@ p {
 @media (max-width: 1480px) {
   .title_aaa {
     font-size: 1.2vw;
-    margin-bottom: 12px;
   }
 
   .subtitle {

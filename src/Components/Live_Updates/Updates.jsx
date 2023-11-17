@@ -7,7 +7,7 @@ import { useInView } from 'react-intersection-observer';
 
 function Updates() {
   //
-  const [ref, inView] = useInView({
+  const [viewRef, inView] = useInView({
     triggerOnce: true // Trigger only once
   });
 
@@ -29,7 +29,7 @@ function Updates() {
   return (
     <div className="updates">
       <div className="updates_left">
-        <div ref={ref} className={`section ${inView ? 'title_aaa' : ''}`}>
+          <div ref={viewRef} className={`section ${inView ? 'title_aaa' : ''}`}>
           <span className="block_aaa"></span>
           <h1>
             Live Updates<span></span>

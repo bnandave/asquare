@@ -9,7 +9,7 @@ import { useInView } from 'react-intersection-observer';
 
 function Course_Details() {
   //
-  const [ref, inView] = useInView({
+  const [viewRef, inView] = useInView({
     triggerOnce: true // Trigger only once
   });
   //
@@ -17,7 +17,7 @@ function Course_Details() {
 
   return (
     <div className="Course_Details">
-      <div ref={ref} className={`section ${inView ? 'title_aaa' : ''}`}>
+        <div ref={viewRef} className={`section ${inView ? 'title_aaa' : ''}`}>
         <span className="block_aaa"></span>
         <h1>
           Course Details<span></span>

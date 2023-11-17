@@ -4,16 +4,16 @@ import "../style.css"
 import c_u_hero_img from '../Assets/contact-us-illustrator.png';
 import { useInView } from 'react-intersection-observer';
 
-function Contact_Us() {
+function Contact_Us({ onEnquiryClick }) {
   //
-  const [ref, inView] = useInView({
+  const [viewRef, inView] = useInView({
     triggerOnce: true // Trigger only once
   });
 
   return (
     <div className="contact_us">
       <div className="c_u_left">
-        <div ref={ref} className={`section ${inView ? 'title_aaa' : ''}`}>
+          <div ref={viewRef} className={`section ${inView ? 'title_aaa' : ''}`}>
           <span className="block_aaa"></span>
           <h1>
             Contact Us<span></span>
@@ -25,7 +25,7 @@ function Contact_Us() {
           out to our dedicated team for assistance, information, or any
           assistance you may need
         </p>
-        <button className="button">Enquiry Form</button>
+        <button className="button" onClick={onEnquiryClick}>Enquiry Form</button>
       </div>
       <div className="c_u_right">
         <img src={c_u_hero_img} alt="img" />
