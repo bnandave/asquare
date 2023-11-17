@@ -4,6 +4,9 @@
   flex-direction: column;
   align-items: center;
   gap: 4vh;
+  background-color: white;
+  background-image: url('../Assets/background-6.png');
+  background-blend-mode: multiply;
 }
 
 .c_d_selector ul {

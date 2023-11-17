@@ -10,6 +10,10 @@
   flex-direction: column;
   justify-content: space-between;
   background-color: #bfe0ff;
+  background-image: url('../Assets/leaves.png');
+  background-blend-mode: multiply;
+  background-size: cover;
+  background-repeat: no-repeat;
   width: 80%;
 }
 

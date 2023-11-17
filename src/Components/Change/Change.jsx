@@ -3,13 +3,11 @@ import './Change.css';
 
 function Change() {
   return (
-    
-      <div className="title_aaa">
-        <span className="block_aaa"></span>
-        <h1>
-          Update<span></span>
-        </h1>
+    <div class="div-with-background">
+      <div class="content">
+        <h1>Hare Krishna</h1>
       </div>
+    </div>
   );
 }
 

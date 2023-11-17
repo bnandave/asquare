@@ -6,6 +6,11 @@
   align-items: center;
   width: 100%;
   background-color: rgba(236, 246, 255, 1);
+  background-image: url('../Assets/12618.png');
+  background-blend-mode: multiply;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: right 0px top -120px;
 }
 
 .hero_container_p1 {

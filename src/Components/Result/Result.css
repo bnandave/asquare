@@ -11,6 +11,11 @@
   background-color: #bfe0ff;
   width: 900px;
   padding: 40px 40px;
+  background-color: #bfe0ff;
+  background-image: url('../Assets/4015.png');
+  background-blend-mode: multiply;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .result_subtitle {
@@ -70,7 +75,7 @@
 }
 
 .result_right img:first-child {
-  height: 310px;
+  height: 280px;
   width: 510px;
   object-fit: cover;
   display: inline-block;
@@ -81,7 +86,7 @@
 .result_right img:nth-child(2),.result_right img:nth-child(3){
     display: inline-block;
     position: relative;
-    top: 140px;
+    top: 120px;
     left: -38px;
     height: 24px;
     width: 24px;

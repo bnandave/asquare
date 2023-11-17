@@ -4,6 +4,10 @@
   flex-direction: row;
   justify-content: space-between;
   gap: 80px;
+  background-image: url('../Assets/background-4.png');
+  background-blend-mode: multiply;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .l_left {

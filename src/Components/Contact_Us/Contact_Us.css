@@ -1,28 +1,33 @@
 .contact_us {
-    background-color: rgba(236, 246, 255, 1);
-    padding: 40px 10vw;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
+  background-color: rgba(236, 246, 255, 1);
+  padding: 40px 10vw;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  background-image: url('../Assets/12618.png');
+  background-position: right 0 top -100px;
+  background-blend-mode: multiply;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .c_u_left {
-    display: flex;
-    flex-direction: column;
-    gap: 2vh;
-    width: fit-content;
+  display: flex;
+  flex-direction: column;
+  gap: 2vh;
+  width: fit-content;
 }
 
 .c_u_subtitle {
-    width: 28vw;
+  width: 28vw;
 }
 
 .c_u_text {
-    width: 34vw;
+  width: 34vw;
 }
 
 .c_u_right {
-    height: fit-content;
-    width: fit-content;
+  height: fit-content;
+  width: fit-content;
 }

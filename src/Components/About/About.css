@@ -1,6 +1,11 @@
 .about_us {
   padding: 30px 160px;
   gap: 48px;
+  background-color: white;
+  background-image: url('../Assets/background-4.png');
+  background-blend-mode: multiply;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .about_us_img_1 {

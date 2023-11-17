@@ -12,7 +12,7 @@ import FAQ from '../Components/FAQ/FAQ.jsx';
 import Updates from '../Components/Live_Updates/Updates.jsx';
 import Introduction from '../Components/Introduction/Introduction.jsx';
 import Form from '../Components/Form/Form.jsx';
-// import Change from '../Components/Change/Change.jsx';
+import Change from '../Components/Change/Change.jsx';
 // import Footer from '../Components/Footer/Footer.jsx';
 
 function Home() {

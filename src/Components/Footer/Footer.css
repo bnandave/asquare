@@ -3,6 +3,11 @@
   display: flex;
   flex-direction: column;
   padding: 60px 160px 0px;
+  background-image: url('../Assets/background-5.png');
+  background-blend-mode: multiply;
+  background-position: right 0px top -100px;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .top_container {

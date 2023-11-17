@@ -5,6 +5,11 @@
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
+  background-image: url('../Assets/12618.png');
+  background-position: right 0 top -100px;
+  background-blend-mode: multiply;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .a_u_conatiner_left {

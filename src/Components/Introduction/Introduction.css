@@ -7,20 +7,24 @@
   background-color: rgba(236, 246, 255, 1);
   height: 500px;
   margin-bottom: 260px;
+  background-image: url('../Assets/6177.png');
+  background-blend-mode: multiply;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .introduction p {
-    text-align: center;
+  text-align: center;
 }
 
 .introduction p:nth-child(2) {
-    width: 560px;
+  width: 560px;
 }
 
 .introduction img {
-    display: inline-block;
-    position: relative;
-    top: -160px;
-    cursor: pointer;
-    width: 1200px;
+  display: inline-block;
+  position: relative;
+  top: -160px;
+  cursor: pointer;
+  width: 1200px;
 }

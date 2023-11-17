@@ -6,6 +6,11 @@
   align-items: center;
   justify-content: space-between;
   gap: 3vw;
+  background-image: url('../Assets/12618.png');
+  background-position: right 0px top -120px;
+  background-blend-mode: multiply;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .c_h_container_left {

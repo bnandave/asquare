@@ -29,6 +29,11 @@
   gap: 20px;
   overflow-y: hidden;
   width: 60%;
+  background-color: #bfe0ff;
+  background-image: url('../Assets/4015.png');
+  background-blend-mode: multiply;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .faq_right div {
