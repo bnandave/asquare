@@ -1,4 +1,4 @@
-import React, { forwardRef } from 'react';
+import React, { forwardRef, useState } from 'react';
 import './Form.css';
 import '../style.css';
 import { useInView } from 'react-intersection-observer';
@@ -6,8 +6,16 @@ import { useInView } from 'react-intersection-observer';
 const Form = forwardRef((props, ref) => {
   //
   const [viewRef, inView] = useInView({
-    triggerOnce: true 
+    triggerOnce: true
   });
+  //
+  let [text, setText] = useState(false);
+  const handleChange = (event) => {
+    let newValue = event.target.value;
+    if (newValue.length != 0) {
+      setText(true);
+    }
+  };
 
   return (
     <div className="form" ref={ref}>
@@ -22,59 +30,110 @@ const Form = forwardRef((props, ref) => {
           Transforming Your Curiosity into Confidence and Success
         </p>
         <div className="data_container">
-          <input
-            type="text"
-            name="firstName"
-            required
-            maxLength="28"
-            placeholder="Full Name"
-          />
-          <input
-            type="text"
-            name="lastName"
-            required
-            maxLength="28"
-            placeholder="Last Name"
-          />
-          <input
-            type="number"
-            name="contact"
-            required
-            maxLength="28"
-            placeholder="Phone Number"
-          />
-          <input
-            type="text"
-            name="gmail"
-            maxLength="28"
-            placeholder="Email ID (Optional)"
-          />
-          <input
-            type="text"
-            name="course"
-            required
-            maxLength="28"
-            placeholder="Course"
-          />
-          <input
-            type="text"
-            name="location"
-            required
-            maxLength="28"
-            placeholder="Location (Optional)"
-          />
-          <input
-            type="text"
-            name="feedback"
-            required
-            maxLength="108"
-            placeholder="Feedback"
-          />
+          <div className="input_text">
+            <input
+              type="text"
+              onChange={handleChange}
+              required
+              maxLength={20}
+              name="given-name"
+              id='first-name'
+              autoComplete="given-name"
+            />
+            <label htmlFor="first-name" className={text ? 'it_label_true' : 'it_label_false'}>
+              First Name
+            </label>
+          </div>
+          <div className="input_text">
+            <input
+              type="text"
+              onChange={handleChange}
+              required
+              maxLength={20}
+              name="family-name"
+              autoComplete="family-name"
+              id='last-name'
+            />
+            <label htmlFor='last-name' className={text ? 'it_label_true' : 'it_label_false'}>
+              Last Name
+            </label>
+          </div>
+          <div className="input_text">
+            <input
+              type="number"
+              onChange={handleChange}
+              required
+              minLength={10}
+              maxLength={16}
+              name="tel"
+              autoComplete="tel"
+              id="tel"
+            />
+            <label htmlFor="tel" className={text ? 'it_label_true' : 'it_label_false'}>
+              Phone Number
+            </label>
+          </div>
+          <div className="input_text">
+            <input
+              type="text"
+              onChange={handleChange}
+              required
+              maxLength={30}
+              name="email"
+              autoComplete="email"
+              id='email'
+            />
+            <label htmlFor='email' className={text ? 'it_label_true' : 'it_label_false'}>
+              Email ID (Optional)
+            </label>
+          </div>
+          <div className="input_text">
+            <input
+              type="text"
+              onChange={handleChange}
+              required
+              maxLength={20}
+              name="course"
+              autoComplete="course"
+              id='course'
+            />
+            <label htmlFor='course' className={text ? 'it_label_true' : 'it_label_false'}>
+              Course
+            </label>
+          </div>
+          <div className="input_text">
+            <input
+              type="text"
+              onChange={handleChange}
+              required
+              maxLength={50}
+              name="street-address"
+              autoComplete="street-address"
+              id='location'
+            />
+            <label htmlFor='location' className={text ? 'it_label_true' : 'it_label_false'}>
+              Location
+            </label>
+          </div>
+          <div className="input_text">
+            <input
+              type="text"
+              onChange={handleChange}
+              required
+              maxLength={140}
+              name="feedback"
+              autoComplete="feedback"
+              id='feedback'
+            />
+            <label htmlFor='feedback' className={text ? 'it_label_true' : 'it_label_false'}>
+              Feedback
+            </label>
+          </div>
         </div>
         <button className="button">Submit</button>
       </div>
     </div>
   );
-})
+});
 
 export default Form;

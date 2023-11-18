@@ -136,9 +136,9 @@
   display: none;
 }
 
-/* when card hover */
+/* when card focus */
 
-.card:hover .card_content {
+.card:hover   .card_content {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -160,65 +160,65 @@
   align-items: center;
 }
 
-.card:hover .card_top {
+.card:hover   .card_top {
   display: flex;
   flex-direction: column;
   gap: 6px;
 }
 
-.card:hover .card_top_containers p {
+.card:hover   .card_top_containers p {
   display: inline-block;
   font-size: 14px;
   font-weight: 400;
   margin: 0;
 }
 
-.card:hover .card_top_containers img {
+.card:hover   .card_top_containers img {
   position: relative;
   top: -1.4px;
   height: 20px;
   width: fit-content;
 }
 
-.card:hover .card_top p {
+.card:hover   .card_top p {
   margin: 0;
   width: 200px;
   padding: 0px 10px;
 }
 
-.card:hover .card_top div:nth-child(1) p {
+.card:hover   .card_top div:nth-child(1) p {
   background-color: #fffef1;
   width: 140px;
   height: fit-content;
   padding: 4px 10px;
 }
 
-.card:hover .card_top div:nth-child(2) p {
+.card:hover   .card_top div:nth-child(2) p {
   background-color: #fffcb2;
   width: 160px;
   height: fit-content;
   padding: 4px 10px;
 }
 
-.card:hover .card_top div:nth-child(3) p {
+.card:hover   .card_top div:nth-child(3) p {
   background-color: #fff856;
   width: 180px;
   height: fit-content;
   padding: 4px 10px;
 }
 
-.card:hover .card_bottom {
+.card:hover   .card_bottom {
   display: flex;
   flex-direction: column;
   gap: 18px;
   align-items: center;
 }
 
-.card:hover .card_bottom p {
+.card:hover   .card_bottom p {
   margin: 0;
 }
 
-.card:hover .card_bottom p:nth-child(1) {
+.card:hover   .card_bottom p:nth-child(1) {
   font-size: 24px;
   font-weight: 700;
   width: 200px;
@@ -226,7 +226,7 @@
   color: white;
 }
 
-.card:hover .card_bottom p:nth-child(2) {
+.card:hover   .card_bottom p:nth-child(2) {
   font-size: 14px;
   font-weight: 400;
   width: 80%;
@@ -235,7 +235,7 @@
   display: block;
 }
 
-.card:hover .course_card_btn {
+.card:hover   .course_card_btn {
   display: block;
   font-size: 16px;
   font-weight: 700;
@@ -250,11 +250,11 @@
   transition: transform 0.3s ease;
 }
 
-.card:hover .course_card_btn:hover {
+.card:hover   .course_card_btn:hover {
   transform: translate(0, -8px);
   box-shadow: #ffdd0044 0px 10px 10px;
 }
 
-.card:hover .heading_no_hover {
+.card:hover   .heading_no_hover {
   display: none;
 }
